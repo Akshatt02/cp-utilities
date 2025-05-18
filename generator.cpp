@@ -35,19 +35,19 @@ vector<pair<int, int>> generateGraph(int N, int M) {
 }
 
 void generateTestCases() {
-    freopen("C:/Users/aksha/Onedrive/Coding/Codeforces/inp/input.txt", "w", stdout); // Redirect output to input.txt
+    freopen("input.txt", "w", stdout); // Redirect output to input.txt
 
-    int T = randInt(3, 10); // Number of test cases
+    int T = randInt(3, 12); // Number of test cases
     cout << T << "\n";
 
     while (T--) {
         int type = 1;
 
         if (type == 1) { // Array Test Case
-            int n = 100000;
+            int n = randInt(1, 10);
             cout << n << "\n";
             for (int i = 0; i < n; i++) {
-                cout << randInt(1, 1e9) << " ";
+                cout << randInt(1, 20) << " ";
             }
             cout << "\n";
 
